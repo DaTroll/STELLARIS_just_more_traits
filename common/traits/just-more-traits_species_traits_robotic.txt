@@ -135,7 +135,7 @@ trait_just-more-traits_robot_nanofabricated = {
 	allowed_archetypes = { ROBOT MACHINE }
 	
 	modifier = {
-		pop_assembly_speed = 0.30
+		planet_pop_assembly_mult = 0.30
 	}
 }
 
@@ -205,7 +205,7 @@ trait_just-more-traits_robot_bespokecircuitry = {
 	opposites = { "trait_robot_mass_produced" "trait_robot_custom_made" "trait_just-more-traits_robot_nanofabricated" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		pop_assembly_speed = -0.3
+		planet_pop_assembly_mult = -0.3
 	}
 }
 
