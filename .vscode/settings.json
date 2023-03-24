@@ -1,0 +1,43 @@
+{
+    "deploy.reloaded": {
+        "values": {
+            "outputDir": {
+                "type": "code",
+                "code": "require('os').homedir() + '/'"
+            }
+        },
+        
+        "packages": [
+            {
+                "name": "Just More Traits",
+                "description": "Just More Traits",
+
+                "button": {
+                    "text": "Deploy to Just More Traits",
+                    
+                    "targets": [ "Just More Traits" ]
+                },
+
+                "files": [
+                    "**",
+                ],
+                "exclude": [
+                    ".vscode/**",
+                    "*.md"
+                ],
+
+                "deployOnSaveButton": [ "Just More Traits" ]
+            },
+        ],
+
+        "targets": [          
+            {
+                "type": "local",
+                "name": "Just More Traits",
+                "description": "Local folder",
+
+                "dir": "${outputDir}/Documents/Paradox Interactive/Stellaris/mod/just_more_traits/"
+            },
+        ]
+    }
+}
