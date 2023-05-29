@@ -395,11 +395,21 @@ trait_just-more-traits_feeble = {
 
 trait_just-more-traits_prodigious = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_talented" "trait_nerve_stapled" }
+	slave_cost = {
+		energy = 1000
+	}
 	modifier = {
-		leader_skill_levels = 2
+		negative_leader_traits_species = -2
+		leaders_upkeep_mult = -0.2
 	}
 }
 

@@ -45,21 +45,28 @@ trait_just-more-traits_robot_subspaceomnibus = {
 }
 
 trait_just-more-traits_robot_reflexivelearning = {
-	cost = 1
-	opposites = { "trait_robot_enhanced_memory" }
+	cost = 2
 	allowed_archetypes = { ROBOT MACHINE }
+	# Synth or Machine only
 	species_potential_add = {
 		exists = from
 		from = {
 			OR = {
-				has_authority = auth_machine_intelligence		
+				has_authority = auth_machine_intelligence
 				has_technology = tech_synthetic_leaders
 			}
 			NOT = { has_policy_flag = ai_outlawed }
 		}
 	}
 	modifier = {
-		leader_skill_levels = 1
+		negative_leader_traits_species = -2
+		leaders_upkeep_mult = -0.5
+	}
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = 1500
 	}
 }
 
