@@ -171,7 +171,7 @@ trait_just-more-traits_contrarians = {
 trait_just-more-traits_longlived = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
-	modifier = { leader_age = 40 }
+	modifier = { leader_lifespan_add = 40 }
 	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_just-more-traits_indelible" "trait_just-more-traits_ephemeral" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 }
@@ -179,7 +179,7 @@ trait_just-more-traits_longlived = {
 trait_just-more-traits_indelible = {
 	cost = 3
 	potential_crossbreeding_chance = 0.5
-	modifier = { leader_age = 60 }
+	modifier = { leader_lifespan_add = 60 }
 	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_just-more-traits_longlived" "trait_just-more-traits_ephemeral" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 }
@@ -187,7 +187,7 @@ trait_just-more-traits_indelible = {
 trait_just-more-traits_ephemeral = {
 	cost = -2
 	potential_crossbreeding_chance = 1.0
-	modifier = { leader_age = -20 }
+	modifier = { leader_lifespan_add = -20 }
 	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_just-more-traits_longlived" "trait_just-more-traits_longlived" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 }
